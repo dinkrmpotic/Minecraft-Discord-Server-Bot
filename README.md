@@ -37,14 +37,14 @@ It uses **persistent views**, interactive menus, and admin commands to make serv
 ```bash
 git clone https://github.com/your-username/your-repo.git
 cd your-repo
-2️⃣ Install dependencies:
 
+2️⃣ Install dependencies:
 bash
 Copy
 Edit
 pip install -r requirements.txt
-3️⃣ Set environment variables (choose one method):
 
+3️⃣ Set environment variables (choose one method):
 Terminal:
 
 bash
@@ -61,12 +61,13 @@ Edit
 API_TOKEN=your_bot_token
 MY_GUILD=your_guild_id
 SUGGESTIONS_CHANNEL=your_channel_id
-4️⃣ Run the bot:
 
+4️⃣ Run the bot:
 bash
 Copy
 Edit
 python main.py
+
 📂 Project Structure
 bash
 Copy
@@ -77,6 +78,7 @@ Edit
 ├── requirements.txt      # Python dependencies
 ├── README.md             # This file
 └── keep_alive.py (opt)   # Optional: keep bot alive on some hosts
+
 ⚙️ Commands
 Command	Description	Permissions
 /verify_menu	Sends verification embed with check button	Admin only
@@ -100,19 +102,10 @@ discord.py
 Python os, typing
 
 To install:
-
 bash
 Copy
 Edit
 pip install discord.py
+
 📜 License
 Released under the MIT License.
-
-💬 Contributing
-Feel free to:
-
-Open issues for bugs or suggestions
-
-Submit pull requests
-
-Fork the project and build your own
