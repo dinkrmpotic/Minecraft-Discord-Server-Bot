@@ -1,77 +1,83 @@
-🛡️ Discord Server Management Bot
-This is a Discord bot built with Python and discord.py that helps manage server roles, verification, rules, applications, info panels, and suggestion tracking.
-It uses persistent views, custom menus, and admin commands to streamline server interactions.
+# 🛡️ Discord Server Management Bot
 
-✨ Features
-✅ Verification System — Easy access gating with a checkmark
-⚙️ Role Menus — Let users choose what they want to be pinged for
-📜 Rules Embed — Auto-send server rules with detailed sections
-📝 Staff Applications — Share links to helper/builder application forms
-ℹ️ Server Info — Provide essential server details and key links
-💡 Suggestions Channel — Allow users to submit suggestions with voting reactions
-🔒 Admin Commands — Only users with the Admin role can trigger key embeds
+A **Discord bot** built with Python and `discord.py` to help manage server roles, verification, rules, applications, info panels, and suggestions.  
+It uses **persistent views**, interactive menus, and admin commands to make server management smooth.
 
-🚀 Getting Started
-Prerequisites
-Python 3.8+
+---
 
-discord.py (pip install discord.py)
+## ✨ Features
 
-Discord bot token
+- ✅ **Verification system** — click to unlock server access  
+- ⚙️ **Role menus** — users choose ping categories  
+- 📜 **Rules embed** — sends detailed server rules  
+- 📝 **Staff applications** — share links for helper/builder roles  
+- ℹ️ **Server info** — show essential details like IP, store, ports  
+- 💡 **Suggestions** — users submit suggestions + voting reactions  
+- 🔒 **Admin commands** — only Admin role can trigger embeds
 
-.env file or environment variables set:
+---
 
-API_TOKEN — your bot token
+## 🚀 Getting Started
 
-MY_GUILD — your Discord server ID
+### Prerequisites
 
-SUGGESTIONS_CHANNEL — the channel ID where suggestions are sent
+- Python 3.8+  
+- `discord.py` (`pip install discord.py`)  
+- Discord bot token  
+- Set environment variables:
+  - `API_TOKEN` — your bot token  
+  - `MY_GUILD` — your Discord server ID  
+  - `SUGGESTIONS_CHANNEL` — suggestions channel ID
 
-🏗️ Installation
+---
 
-1️⃣ Clone the repository
-bash
-Copy
-Edit
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+### 🏗️ Installation
 
-2️⃣ Install dependencies
+1️⃣ Clone the repository:
+```bash
+git clone https://github.com/your-username/your-repo.git
+cd your-repo
+2️⃣ Install dependencies:
+
 bash
 Copy
 Edit
 pip install -r requirements.txt
+3️⃣ Set environment variables (choose one method):
 
-3️⃣ Set environment variables (or create a .env file)
+Terminal:
+
 bash
 Copy
 Edit
 export API_TOKEN=your_bot_token
 export MY_GUILD=your_guild_id
 export SUGGESTIONS_CHANNEL=your_channel_id
+.env file (create a file called .env):
 
-4️⃣ Run the bot
+ini
+Copy
+Edit
+API_TOKEN=your_bot_token
+MY_GUILD=your_guild_id
+SUGGESTIONS_CHANNEL=your_channel_id
+4️⃣ Run the bot:
+
 bash
 Copy
 Edit
 python main.py
 📂 Project Structure
-cpp
+bash
 Copy
 Edit
 .
-├── main.py
-├── views.py
-├── requirements.txt
-├── README.md
-└── (optional) keep_alive.py
-main.py — main bot logic and commands
-
-views.py — defines custom persistent views (button handlers)
-
-keep_alive.py — optional file to keep bot running on some platforms
-
-⚙️ Commands Overview
+├── main.py               # Main bot code
+├── views.py              # Persistent view (buttons/menus)
+├── requirements.txt      # Python dependencies
+├── README.md             # This file
+└── keep_alive.py (opt)   # Optional: keep bot alive on some hosts
+⚙️ Commands
 Command	Description	Permissions
 /verify_menu	Sends verification embed with check button	Admin only
 /rules_menu	Sends rules embed	Admin only
@@ -79,23 +85,34 @@ Command	Description	Permissions
 /info_menu	Sends server info embed	Admin only
 /role_menu	Sends role selector embed with buttons	Admin only
 /embed	Sends a custom embed (template)	Admin only
-/suggest	Allows users to submit suggestions	Everyone
+/suggest	Lets users submit suggestions	Everyone
 
-🛠️ Customization
-Embeds & fields: Edit the embed sections in main.py to customize titles, descriptions, and links.
+🧩 Customization
+Embeds: Modify titles, fields, and descriptions in main.py
 
-Views & buttons: Modify or extend the VerificationMenu and RolesMenu in views.py to add more buttons or role interactions.
+Buttons & roles: Edit VerificationMenu and RolesMenu in views.py
 
-Permissions: The bot uses role checks (@commands.has_role("Admin")) — adjust as needed.
+Permissions: Adjust @commands.has_role("Admin") decorators as needed
 
-🧩 Dependencies
+📦 Dependencies
 discord.py
 
-Python standard library (os, typing)
+Python os, typing
 
-📄 License
-This project is open-source and available under the MIT License.
+To install:
 
-💬 Contact
-Feel free to open an issue or submit a pull request if you want to contribute!
-For questions, DM the server admin or file a GitHub issue.
+bash
+Copy
+Edit
+pip install discord.py
+📜 License
+Released under the MIT License.
+
+💬 Contributing
+Feel free to:
+
+Open issues for bugs or suggestions
+
+Submit pull requests
+
+Fork the project and build your own
