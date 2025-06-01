@@ -1,5 +1,3 @@
-# Minecraft-Discord-Server-Bot
-
 🛡️ Discord Server Management Bot
 This is a Discord bot built with Python and discord.py that helps manage server roles, verification, rules, applications, info panels, and suggestion tracking.
 It uses persistent views, custom menus, and admin commands to streamline server interactions.
@@ -30,8 +28,8 @@ MY_GUILD — your Discord server ID
 SUGGESTIONS_CHANNEL — the channel ID where suggestions are sent
 
 🏗️ Installation
-1️⃣ Clone the repository
 
+1️⃣ Clone the repository
 bash
 Copy
 Edit
@@ -39,14 +37,12 @@ git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
 
 2️⃣ Install dependencies
-
 bash
 Copy
 Edit
 pip install -r requirements.txt
 
 3️⃣ Set environment variables (or create a .env file)
-
 bash
 Copy
 Edit
@@ -55,7 +51,6 @@ export MY_GUILD=your_guild_id
 export SUGGESTIONS_CHANNEL=your_channel_id
 
 4️⃣ Run the bot
-
 bash
 Copy
 Edit
